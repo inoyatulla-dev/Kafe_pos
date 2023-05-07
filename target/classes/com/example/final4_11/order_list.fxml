@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="493.0" style="-fx-background-color: #3484fb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final4_11.OrderController">
+   <children>
+      <Text fill="#00ff2b" layoutX="99.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buyurtmani hisoblash">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="text_choy" layoutX="183.0" layoutY="84.0" prefHeight="30.0" prefWidth="50.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="text_lavash" layoutX="182.0" layoutY="130.0" prefHeight="30.0" prefWidth="50.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="text_osh" layoutX="183.0" layoutY="175.0" prefHeight="30.0" prefWidth="50.0" style="-fx-background-radius: 20;" />
+      <TextField fx:id="text_salat" layoutX="183.0" layoutY="222.0" prefHeight="30.0" prefWidth="50.0" style="-fx-background-radius: 20;" />
+      <Label layoutX="84.0" layoutY="90.0" text="Limon choy" textFill="#ebff0d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="135.0" text="Lavash" textFill="#ffcf0a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="181.0" text="To'y oshi" textFill="#f7a414">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="230.0" prefHeight="18.0" prefWidth="65.0" text="Salat" textFill="#ff4700">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="271.0" prefHeight="18.0" prefWidth="190.0" text="Xizmat ko'rsatish: 12%">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endY="1.0" startY="0.5303029580549761">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2851100564002991" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.48183041722745623">
+                     <color>
+                        <Color red="0.2851100564002991" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6961494271739488">
+                     <color>
+                        <Color green="1.0" blue="0.47631126642227173" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9194444417953491" green="1.0" blue="0.03333333507180214" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="72.0" layoutY="399.0" prefHeight="31.0" prefWidth="226.0" text="Jami buyurtma narxi:" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_jami" layoutX="307.0" layoutY="399.0" prefHeight="31.0" prefWidth="226.0" textFill="#00ff0d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_hs" layoutX="161.0" layoutY="316.0" mnemonicParsing="false" onAction="#Hisobla" prefHeight="44.0" prefWidth="93.0" style="-fx-background-color: #52fb34; -fx-background-radius: 20;" text="Hisoblash" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_tz" layoutX="298.0" layoutY="316.0" mnemonicParsing="false" onAction="#Tozalash" prefHeight="44.0" prefWidth="94.0" style="-fx-background-color: #fb0808; -fx-background-radius: 20;" text="Tozalash" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="text_xz" alignment="TOP_RIGHT" layoutX="249.0" layoutY="290.0" prefHeight="15.0" prefWidth="101.0" textAlignment="RIGHT" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_ch" layoutX="307.0" layoutY="84.0" mnemonicParsing="false" onAction="#ButtonChoy" prefHeight="44.0" prefWidth="66.0" text="choy" textFill="#00000096">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="bt_lavash" layoutX="387.0" layoutY="84.0" mnemonicParsing="false" onAction="#Buttonlavash" prefHeight="44.0" prefWidth="66.0" text="lavash" textFill="#00000096">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_osh" layoutX="387.0" layoutY="139.0" mnemonicParsing="false" onAction="#Buttonosh" prefHeight="44.0" prefWidth="66.0" text="osh" textFill="#00000096">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="bt_salat" layoutX="307.0" layoutY="138.0" mnemonicParsing="false" onAction="#ButtonSalat" prefHeight="44.0" prefWidth="66.0" text="salat" textFill="#00000096">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_chek" layoutX="307.0" layoutY="206.0" mnemonicParsing="false" onAction="#Chek" prefHeight="44.0" prefWidth="146.0" text="Chekni chiqarish" />
+   </children>
+</AnchorPane>

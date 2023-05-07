@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="400.0" prefWidth="274.0" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.final4_11.check">
+   <children>
+      <VBox layoutX="17.0" layoutY="4.0" prefHeight="391.0" prefWidth="232.0">
+         <children>
+            <ImageView fitHeight="166.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@10-512.png.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Xaridingiz uchun raxmat!">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="text_chek" alignment="TOP_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="232.0" text="0" textAlignment="RIGHT">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="cheklabel" alignment="TOP_RIGHT" prefHeight="18.0" prefWidth="230.0" text="0" textAlignment="RIGHT" />
+         </children>
+      </VBox>
+   </children>
+</fx:root>
